@@ -401,7 +401,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 #gallery-travel[data-mode="grid"] .thumb { position: relative; scroll-snap-align: start; overflow: visible; border-radius: 0; }
 #gallery-travel .page { position: relative; display: block; }
 #gallery-travel[data-mode="grid"] .thumb .page > img:first-child {
-  display: block; height: clamp(250px, calc(100vh - 500px), 440px); width: auto; max-width: 70vw;
+  display: block; height: clamp(240px, calc(100vh - 560px), 440px); width: auto; max-width: 70vw;
   border-radius: 6px; box-shadow: var(--page-shadow); background: #FDFCF9;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -423,7 +423,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 #gallery-travel .chapter { display: none; }
 #gallery-travel[data-mode="grid"] .chapter {
   display: flex; flex-direction: column; justify-content: flex-end; flex: 0 0 auto; width: 13.5rem;
-  height: clamp(250px, calc(100vh - 500px), 440px); padding: 0 1.4rem 0.2rem 0; border-right: 1px solid var(--rule);
+  height: clamp(240px, calc(100vh - 560px), 440px); padding: 0 1.4rem 0.2rem 0; border-right: 1px solid var(--rule);
   scroll-snap-align: start;
 }
 #gallery-travel .chapter-year { margin: 0; font-size: 3.2rem; line-height: 1; font-style: italic; color: var(--accent); }
@@ -442,3 +442,11 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
   #gallery-travel .chapter-year { font-size: 2.4rem; }
   #gallery-travel[data-mode="grid"] .thumb .snap { width: clamp(64px, 36%, 100px); right: -0.7rem; }
 }
+
+/* Travel gallery intro: epigraph and short essay */
+#gallery-travel .travel-intro { max-width: 46rem; margin: 0.2rem 0 1.2rem; }
+#gallery-travel .epigraph { margin: 0; font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif; font-size: 1.3rem; letter-spacing: 0.08em; color: var(--accent); }
+#gallery-travel .epigraph-en { margin: 0.25rem 0 1rem; font-style: italic; color: var(--muted); font-size: 0.98rem; }
+#gallery-travel .travel-intro p:last-child { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text); }
+#gallery-travel[data-mode="photo"] .travel-intro { display: none; }
+@media (max-width: 800px) { #gallery-travel .epigraph { font-size: 1.15rem; } #gallery-travel .travel-intro p:last-child { font-size: 0.95rem; } }
