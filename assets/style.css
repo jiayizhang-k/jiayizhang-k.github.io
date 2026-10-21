@@ -73,7 +73,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .site-name[aria-current="page"] { border-bottom-color: var(--accent); }
 nav { display: flex; align-items: baseline; gap: 2rem; }
-nav .theme-toggle { align-self: center; }
+nav .theme-toggle { align-self: center; transform: translateY(-3.5px); }
 nav a {
   color: var(--muted); text-decoration: none; font-size: 1.3rem; font-weight: 400;
   padding: 0.2rem 0; border-bottom: 2px solid transparent;
