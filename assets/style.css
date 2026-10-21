@@ -392,3 +392,53 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 .venues { font-size: 0.95rem; color: var(--muted); margin-top: -0.2rem; }
 .poster-dialog { width: auto; max-width: min(640px, 92vw); }
 .poster-dialog img { display: block; width: 100%; height: auto; max-height: 76vh; object-fit: contain; margin-top: 0.8rem; border-radius: 6px; }
+
+/* Travel sketches: a sketchbook wall with chapters and snapshot insets */
+#gallery-travel { --paper: #F7F2EA; --page-shadow: 0 1px 2px rgba(60, 44, 30, 0.10), 0 8px 18px -10px rgba(60, 44, 30, 0.30); }
+#gallery-travel[data-mode="grid"] { background: var(--paper); }
+#gallery-travel h2 { letter-spacing: 0.01em; }
+#gallery-travel[data-mode="grid"] .thumbs { gap: 2.4rem; padding: 0.8rem 1.4rem 1.6rem 0.4rem; align-items: flex-start; }
+#gallery-travel[data-mode="grid"] .thumb { position: relative; scroll-snap-align: start; overflow: visible; border-radius: 0; }
+#gallery-travel .page { position: relative; display: block; }
+#gallery-travel[data-mode="grid"] .thumb .page > img:first-child {
+  display: block; height: clamp(250px, calc(100vh - 500px), 440px); width: auto; max-width: 70vw;
+  border-radius: 6px; box-shadow: var(--page-shadow); background: #FDFCF9;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+#gallery-travel[data-mode="grid"] .thumb.is-photo .page > img:first-child { border: 7px solid #FDFCF9; border-bottom-width: 22px; border-radius: 2px; }
+#gallery-travel[data-mode="grid"] .thumb .snap {
+  position: absolute; right: -1.1rem; bottom: -0.9rem; height: auto; width: clamp(78px, 38%, 128px); max-width: none;
+  border: 5px solid #FDFCF9; border-bottom-width: 15px; border-radius: 2px; background: #FDFCF9;
+  box-shadow: 0 6px 16px -4px rgba(40, 30, 20, 0.35); transform: rotate(4deg); transition: transform 0.35s ease;
+}
+#gallery-travel[data-mode="grid"] .thumb:hover .page > img:first-child,
+#gallery-travel[data-mode="grid"] .thumb:focus-visible .page > img:first-child { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(60, 44, 30, 0.12), 0 18px 32px -10px rgba(60, 44, 30, 0.36); }
+#gallery-travel[data-mode="grid"] .thumb:hover .snap,
+#gallery-travel[data-mode="grid"] .thumb:focus-visible .snap { transform: rotate(0deg) translateY(-6px) scale(1.06); }
+#gallery-travel[data-mode="grid"] .thumb-title {
+  font-weight: 600; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 1.55rem 0 0.1rem; white-space: nowrap;
+}
+#gallery-travel .thumb-date { display: none; }
+#gallery-travel[data-mode="grid"] .thumb-date { display: block; font-style: italic; color: var(--muted); font-size: 0.95rem; white-space: nowrap; }
+#gallery-travel .chapter { display: none; }
+#gallery-travel[data-mode="grid"] .chapter {
+  display: flex; flex-direction: column; justify-content: flex-end; flex: 0 0 auto; width: 13.5rem;
+  height: clamp(250px, calc(100vh - 500px), 440px); padding: 0 1.4rem 0.2rem 0; border-right: 1px solid var(--rule);
+  scroll-snap-align: start;
+}
+#gallery-travel .chapter-year { margin: 0; font-size: 3.2rem; line-height: 1; font-style: italic; color: var(--accent); }
+#gallery-travel .chapter h3 { margin: 0.5rem 0 0.6rem; font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
+#gallery-travel .chapter-route { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--text); }
+#gallery-travel .chapter-medium { margin: 0.6rem 0 0; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+#gallery-travel[data-mode="photo"] .snap { display: none; }
+#gallery-travel[data-mode="photo"] .viewer { background: var(--paper); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #gallery-travel { --paper: #2F2B2C; } }
+:root[data-theme="dark"] #gallery-travel { --paper: #2F2B2C; }
+@media (max-width: 800px) {
+  #gallery-travel[data-mode="grid"] .thumbs { gap: 1.6rem; }
+  #gallery-travel[data-mode="grid"] .thumb .page > img:first-child,
+  #gallery-travel[data-mode="grid"] .chapter { height: clamp(220px, calc(100vh - 520px), 46vh); }
+  #gallery-travel[data-mode="grid"] .chapter { width: 10.5rem; padding-right: 1rem; }
+  #gallery-travel .chapter-year { font-size: 2.4rem; }
+  #gallery-travel[data-mode="grid"] .thumb .snap { width: clamp(64px, 36%, 100px); right: -0.7rem; }
+}
