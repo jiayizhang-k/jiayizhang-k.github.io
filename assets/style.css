@@ -359,8 +359,8 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 .uni { margin: 0.45rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.4; }
 .side-rule { border: 0; border-top: 1px solid var(--rule); margin: 1.1rem 0 0.9rem; width: 100%; }
 .email { margin: 0; font-size: 1rem; overflow-wrap: anywhere; }
-.icons { display: flex; gap: 1.1rem; margin-top: 0.7rem; align-items: center; }
-.icons a { color: var(--muted); font-size: 1.45rem; line-height: 1; text-decoration: none; }
+.icons { display: flex; gap: 1rem; margin-top: 0.65rem; align-items: center; }
+.icons a { color: var(--muted); font-size: 1.15rem; line-height: 1; text-decoration: none; transition: color .15s; }
 .icons a:hover, .icons a:focus-visible { color: var(--accent); }
 @media (max-width: 800px) {
   .side-rule, .email, .icons { grid-column: 1 / -1; }
