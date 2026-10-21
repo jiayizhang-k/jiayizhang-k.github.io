@@ -368,3 +368,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
   .uni { white-space: normal; }
   .side-rule { margin: 0.9rem 0 0.7rem; }
 }
+
+/* Center the header name over the sidebar photo */
+@media (min-width: 1240px) { .profile { margin-left: -47px; } }
+@media (min-width: 801px) and (max-width: 1239px) { .site-name { margin-left: 47px; } }
