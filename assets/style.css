@@ -63,7 +63,7 @@ a:hover { text-decoration-thickness: 2px; }
 .topbar { border-bottom: 1px solid var(--rule); }
 .topbar-inner {
   max-width: 1140px; margin: 0 auto; padding: 1.1rem 1.5rem;
-  display: grid; grid-template-columns: 255px minmax(0, 1fr); gap: 3.5rem; align-items: center;
+  display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem; align-items: center;
 }
 .site-name { justify-self: start; }
 .site-name {
@@ -96,7 +96,7 @@ nav a[aria-current="page"] { color: var(--text); font-weight: 600; border-bottom
 /* Two-column layout, after AcademicPages */
 .layout {
   max-width: 1140px; margin: 0 auto; padding: 3rem 1.5rem 4rem;
-  display: grid; grid-template-columns: 255px minmax(0, 1fr); gap: 3.5rem;
+  display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem;
 }
 
 .profile { position: sticky; top: 2rem; align-self: start; }
@@ -109,9 +109,9 @@ nav a[aria-current="page"] { color: var(--text); font-weight: 600; border-bottom
   font-size: 3.2rem; font-weight: 500; color: var(--accent); background: var(--surface);
 }
 .profile-name { margin: 1.4rem 0 0.1rem; font-size: 1.45rem; font-weight: 600; line-height: 1.25; }
-.name-zh { margin: 0.05rem 0 0.15rem; color: var(--muted); font-size: 1.05rem; letter-spacing: 0.06em; font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif; }
+.name-zh { margin: 0.05rem 0 0.15rem; color: var(--muted); font-size: 1rem; letter-spacing: 0.06em; font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif; }
 .pronouns { margin: 0; color: var(--muted); font-size: 1rem; }
-.role { margin: 0.6rem 0 0; font-size: 1.05rem; line-height: 1.4; }
+.role { margin: 0.6rem 0 0; font-size: 1rem; line-height: 1.45; }
 .role a { color: inherit; text-decoration-color: var(--ring); }
 .role + .role { margin-top: 0.35rem; }
 .role a:hover { color: var(--accent); }
@@ -357,7 +357,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 
 /* Sidebar: grouped credentials, divider, icon links */
 .name-zh .pron { font-family: var(--font); letter-spacing: 0; font-size: 1rem; }
-.uni { margin: 0.45rem 0 0; color: var(--muted); font-size: 0.95rem; line-height: 1.4; white-space: nowrap; }
+.uni { margin: 0.35rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.45; white-space: nowrap; }
 .side-rule { border: 0; border-top: 1px solid var(--rule); margin: 1.1rem 0 0.9rem; width: 100%; }
 .email { margin: 0; font-size: 1rem; overflow-wrap: anywhere; }
 .icons { display: flex; gap: 1rem; margin-top: 0.65rem; align-items: center; }
