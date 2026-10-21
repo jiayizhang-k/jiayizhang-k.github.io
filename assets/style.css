@@ -346,3 +346,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 :root[data-theme="dark"] .hl-news { --hl-bg: #3A3134; }
 :root[data-theme="dark"] .hl-now { --hl-bg: #31352F; }
 @media (max-width: 560px) { .hl-news li { grid-template-columns: 1fr; gap: 0.1rem; } }
+
+/* Tennis: 12 photos in an even 4-column grid (2 columns on phones) */
+#gallery-tennis[data-mode="grid"] .thumbs { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 800px) { #gallery-tennis[data-mode="grid"] .thumbs { grid-template-columns: repeat(2, 1fr); } }
