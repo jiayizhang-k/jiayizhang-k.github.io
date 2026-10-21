@@ -62,7 +62,7 @@ a:hover { text-decoration-thickness: 2px; }
 /* Top bar */
 .topbar { border-bottom: 1px solid var(--rule); }
 .topbar-inner {
-  max-width: 1140px; margin: 0 auto; padding: 1.1rem 1.5rem;
+  max-width: 1140px; margin: 0 auto; padding: 0.65rem 1.5rem;
   display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem; align-items: center;
 }
 .site-name { justify-self: start; }
@@ -95,7 +95,7 @@ nav a[aria-current="page"] { color: var(--text); font-weight: 600; border-bottom
 
 /* Two-column layout, after AcademicPages */
 .layout {
-  max-width: 1140px; margin: 0 auto; padding: 3rem 1.5rem 4rem;
+  max-width: 1140px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem;
   display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem;
 }
 
