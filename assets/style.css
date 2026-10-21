@@ -95,7 +95,7 @@ nav a[aria-current="page"] { color: var(--text); border-bottom-color: var(--acce
 /* Two-column layout, after AcademicPages */
 .layout {
   max-width: 1080px; margin: 0 auto; padding: 3rem 1.5rem 4rem;
-  display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 4rem;
+  display: grid; grid-template-columns: 255px minmax(0, 1fr); gap: 4rem;
 }
 
 .profile { position: sticky; top: 2rem; align-self: start; }
@@ -356,7 +356,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 
 /* Sidebar: grouped credentials, divider, icon links */
 .name-zh .pron { font-family: var(--font); letter-spacing: 0; font-size: 1rem; }
-.uni { margin: 0.45rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.4; }
+.uni { margin: 0.45rem 0 0; color: var(--muted); font-size: 0.95rem; line-height: 1.4; white-space: nowrap; }
 .side-rule { border: 0; border-top: 1px solid var(--rule); margin: 1.1rem 0 0.9rem; width: 100%; }
 .email { margin: 0; font-size: 1rem; overflow-wrap: anywhere; }
 .icons { display: flex; gap: 1rem; margin-top: 0.65rem; align-items: center; }
@@ -364,5 +364,6 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 .icons a:hover, .icons a:focus-visible { color: var(--accent); }
 @media (max-width: 800px) {
   .side-rule, .email, .icons { grid-column: 1 / -1; }
+  .uni { white-space: normal; }
   .side-rule { margin: 0.9rem 0 0.7rem; }
 }
