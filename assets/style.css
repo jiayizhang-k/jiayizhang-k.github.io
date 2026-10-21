@@ -353,3 +353,16 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 /* Tennis: 12 photos in an even 4-column grid (2 columns on phones) */
 #gallery-tennis[data-mode="grid"] .thumbs { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 800px) { #gallery-tennis[data-mode="grid"] .thumbs { grid-template-columns: repeat(2, 1fr); } }
+
+/* Sidebar: grouped credentials, divider, icon links */
+.name-zh .pron { font-family: var(--font); letter-spacing: 0; font-size: 1rem; }
+.uni { margin: 0.45rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.4; }
+.side-rule { border: 0; border-top: 1px solid var(--rule); margin: 1.1rem 0 0.9rem; width: 100%; }
+.email { margin: 0; font-size: 1rem; overflow-wrap: anywhere; }
+.icons { display: flex; gap: 1.1rem; margin-top: 0.7rem; align-items: center; }
+.icons a { color: var(--muted); font-size: 1.45rem; line-height: 1; text-decoration: none; }
+.icons a:hover, .icons a:focus-visible { color: var(--accent); }
+@media (max-width: 800px) {
+  .side-rule, .email, .icons { grid-column: 1 / -1; }
+  .side-rule { margin: 0.9rem 0 0.7rem; }
+}
