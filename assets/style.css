@@ -62,8 +62,8 @@ a:hover { text-decoration-thickness: 2px; }
 /* Top bar */
 .topbar { border-bottom: 1px solid var(--rule); }
 .topbar-inner {
-  max-width: 1140px; margin: 0 auto; padding: 0.65rem 1.5rem;
-  display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem; align-items: center;
+  max-width: 1340px; margin: 0 auto; padding: 0.65rem 1.5rem;
+  display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem; align-items: baseline;
 }
 .site-name { justify-self: start; }
 .site-name {
@@ -72,7 +72,8 @@ a:hover { text-decoration-thickness: 2px; }
   padding: 0.2rem 0; border-bottom: 2px solid transparent;
 }
 .site-name[aria-current="page"] { border-bottom-color: var(--accent); }
-nav { display: flex; align-items: center; gap: 2rem; }
+nav { display: flex; align-items: baseline; gap: 2rem; }
+nav .theme-toggle { align-self: center; }
 nav a {
   color: var(--muted); text-decoration: none; font-size: 1.3rem; font-weight: 400;
   padding: 0.2rem 0; border-bottom: 2px solid transparent;
@@ -95,7 +96,7 @@ nav a[aria-current="page"] { color: var(--text); font-weight: 600; border-bottom
 
 /* Two-column layout, after AcademicPages */
 .layout {
-  max-width: 1140px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem;
+  max-width: 1340px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem;
   display: grid; grid-template-columns: 265px minmax(0, 1fr); gap: 3.5rem;
 }
 
@@ -370,5 +371,8 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
 }
 
 /* Center the header name over the sidebar photo */
-@media (min-width: 1240px) { .profile { margin-left: -47px; } }
-@media (min-width: 801px) and (max-width: 1239px) { .site-name { margin-left: 47px; } }
+@media (min-width: 1400px) {
+  .profile { margin-left: -47px; }
+  .topbar-inner, .layout { position: relative; left: 23px; }  /* keep the whole composition centred */
+}
+@media (min-width: 801px) and (max-width: 1399px) { .site-name { margin-left: 47px; } }
