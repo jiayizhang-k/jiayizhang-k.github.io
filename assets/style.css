@@ -111,8 +111,8 @@ nav a[aria-current="page"] { color: var(--text); border-bottom-color: var(--acce
 .name-zh { margin: 0.05rem 0 0.15rem; color: var(--muted); font-size: 1.05rem; letter-spacing: 0.06em; font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif; }
 .pronouns { margin: 0; color: var(--muted); font-size: 1rem; }
 .role { margin: 0.6rem 0 0; font-size: 1.05rem; line-height: 1.4; }
-.role a { display: block; color: inherit; text-decoration-color: var(--ring); }
-.role a + a { margin-top: 0.4rem; }
+.role a { color: inherit; text-decoration-color: var(--ring); }
+.role + .role { margin-top: 0.35rem; }
 .role a:hover { color: var(--accent); }
 .links { list-style: none; padding: 0; margin: 1.1rem 0 0; font-size: 1rem; line-height: 1.5; }
 .links li { margin-bottom: 0.45rem; overflow-wrap: anywhere; }
@@ -165,7 +165,7 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
     position: static;
     display: grid; grid-template-columns: 96px 1fr; column-gap: 1.1rem; align-items: center;
   }
-  .portrait { width: 96px; height: 120px; grid-row: span 4; border-radius: 10px; }
+  .portrait { width: 96px; height: 120px; grid-row: span 5; border-radius: 10px; }
   .portrait-fallback { font-size: 2rem; }
   .profile-name { margin: 0; font-size: 1.3rem; }
   .role { margin-top: 0.2rem; font-size: 1rem; }
