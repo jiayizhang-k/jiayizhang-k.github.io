@@ -157,6 +157,8 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
   font-size: 0.95rem; text-align: center; padding: 1.4rem 1.5rem 2rem;
 }
 .footer p { margin: 0; }
+.footer a { color: inherit; text-decoration-color: var(--ring); }
+.footer a:hover { color: var(--accent); }
 
 /* Phones and small tablets */
 @media (max-width: 800px) {
