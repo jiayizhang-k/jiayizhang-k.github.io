@@ -387,3 +387,8 @@ h1 { font-size: 2.4rem; font-weight: 500; line-height: 1.15; margin: 0 0 1.2rem;
   .side-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
   .side-links li { margin: 0; }
 }
+
+/* Research page: venues line and poster viewer */
+.venues { font-size: 0.95rem; color: var(--muted); margin-top: -0.2rem; }
+.poster-dialog { width: auto; max-width: min(640px, 92vw); }
+.poster-dialog img { display: block; width: 100%; height: auto; max-height: 76vh; object-fit: contain; margin-top: 0.8rem; border-radius: 6px; }

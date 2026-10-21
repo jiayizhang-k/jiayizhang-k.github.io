@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css">
-  <link rel="stylesheet" href="assets/style.css?v=2026102116">
+  <link rel="stylesheet" href="assets/style.css?v=2026102118">
   <script src="assets/theme.js?v=2026102117"></script>
 </head>
 <body>
@@ -79,6 +79,7 @@
         <p class="status">With Chandler Rosenberger. Published in <i>International Journal of Politics, Culture, and Society</i> (2026). <a href="https://doi.org/10.1007/s10767-026-09590-4">Read the paper</a></p>
         <p class="question">How do ordinary Chinese viewers make sense of the traumatic history depicted in post-Mao films?</p>
         <p>Drawing on large-scale Douban reviews of fifth-generation films, including <i>Farewell My Concubine</i> and <i>To Live</i>, we use seeded topic modeling to map distinct clusters of mentalities: the different ways ordinary viewers make sense of the upheavals of modern Chinese history alongside official narratives. The analysis pipeline is available on <a href="https://github.com/jiayizhang-k/CulturaCognize">GitHub</a>. This article grew out of my B.A. honors thesis on post-Mao China, <i>How We Reconcile with the Past: National Narrative and Individual Consciousness</i> (2024), which received Highest Honors in International and Global Studies. <a href="https://doi.org/10.48617/etd.1131">Read the thesis</a></p>
+        <p class="venues">Presented at the American Sociological Association Annual Meeting (2026); Global Exchanges in Digital Humanities: Views from UCLA &amp; Korea University (2026); and <i>Culture and Identity in East Asia: New Digital Methods</i>, a colloquium I co-organized at Brandeis University (2025, <a href="images/research/colloquium-poster.jpg" class="poster-link">poster</a>).</p>
       </article>
 
       <article class="project">
@@ -103,6 +104,23 @@
       </article>
     </main>
   </div>
+
+  <dialog class="gallery poster-dialog" id="poster-dialog" aria-label="Colloquium poster">
+    <div class="gallery-head">
+      <h2>Colloquium poster</h2>
+      <button class="gallery-close" type="button" aria-label="Close">&times;</button>
+    </div>
+    <img src="images/research/colloquium-poster.jpg" alt="Poster for the colloquium Culture and Identity in East Asia: New Digital Methods, Brandeis University, March 24&ndash;25, 2025" loading="lazy">
+  </dialog>
+  <script>
+    (function () {
+      var link = document.querySelector('.poster-link'), d = document.getElementById('poster-dialog');
+      if (!link || !d || !d.showModal) return;
+      link.addEventListener('click', function (e) { e.preventDefault(); d.showModal(); });
+      d.querySelector('.gallery-close').addEventListener('click', function () { d.close(); });
+      d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    })();
+  </script>
 
   <footer class="footer">
     <p>&copy; 2026 Jiayi Zhang. Layout inspired by <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a> and <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/">Minimal Mistakes</a>. Site last updated <time id="site-updated" datetime="2026-10-20">October 20, 2026</time>.</p>
